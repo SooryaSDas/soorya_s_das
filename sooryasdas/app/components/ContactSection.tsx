@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, User, Globe } from "lucide-react";
 export default function ContactSection() {
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-20">
+    <section id="contact" className="bg-black text-white py-20 px-6 md:px-20">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -23,12 +23,12 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-4xl md:text-5xl font-bold mb-6">
-            Let’s work <br /> together.
+            Let&apos;s work <br /> together.
           </h3>
 
           <p className="text-gray-400 mb-10 leading-relaxed max-w-md">
-            I'm always open to new opportunities and interesting projects.
-            Feel free to reach out if you'd like to collaborate or just say hello.
+            I&apos;m always open to new opportunities and interesting projects.
+            Feel free to reach out if you&apos;d like to collaborate or just say hello.
           </p>
 
           <div className="space-y-4 text-gray-400">

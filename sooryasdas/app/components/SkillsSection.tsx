@@ -39,7 +39,7 @@ const itemVariants = {
 
 export default function SkillsSection() {
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-20">
+    <section id="skills" className="bg-black text-white py-20 px-6 md:px-20">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

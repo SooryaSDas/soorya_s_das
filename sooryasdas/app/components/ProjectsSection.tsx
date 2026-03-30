@@ -35,7 +35,7 @@ const item = {
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-20">
+    <section id="projects" className="bg-black text-white py-20 px-6 md:px-20">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

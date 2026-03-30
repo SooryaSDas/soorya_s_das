@@ -10,7 +10,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center px-6 bg-black">
+    <section id="about" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16">
         
         {/* LEFT - Stats */}

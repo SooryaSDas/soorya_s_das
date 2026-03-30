@@ -8,14 +8,14 @@ import SkillsSection from "./components/SkillsSection";
 
 export default function Home() {
   return (
-  <div>
-  <Hero />
-  <About/>
-  <SkillsSection/>
-  <ExperienceSection />
-  <EducationSection/>
-  <ProjectsSection/>
-  <ContactSection />
-  </div>
+    <div>
+      <Hero />
+      <About />
+      <SkillsSection />
+      <ExperienceSection />
+      <EducationSection />
+      <ProjectsSection />
+      <ContactSection />
+    </div>
   );
 }
