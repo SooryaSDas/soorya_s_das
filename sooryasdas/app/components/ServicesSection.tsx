@@ -65,7 +65,7 @@ export default function ServicesSection() {
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className="border border-gray-800 rounded-xl p-6 bg-[#0a0a0a] hover:border-gray-600 transition"
+              className="border border-gray-800  p-6 bg-[#0a0a0a] hover:border-gray-600 transition"
             >
               {/* Icon */}
               <Icon className="w-6 h-6 text-gray-400 mb-4" />
