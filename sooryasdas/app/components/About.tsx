@@ -52,7 +52,7 @@ export default function About() {
         >
           <p>
             I&apos;m a passionate software developer with{" "}
-            <span className="text-white">3+ years of experience</span>
+            <span className="text-white">3+ years of experience </span>
             building modern, scalable web applications. As a self-learner, I
             continuously explore new technologies, experiment with new ideas,
             and improve my skills through real-world projects and hands-on
