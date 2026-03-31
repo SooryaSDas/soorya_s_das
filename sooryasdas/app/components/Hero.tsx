@@ -10,6 +10,16 @@ const roles = [
   "Tech Explorer",
 ];
 
+const scrollToAbout = () => {
+  const section = document.getElementById("about");
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
+
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
@@ -25,7 +35,6 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 bg-black relative">
       <div className="max-w-6xl w-full">
-        
         {/* Intro */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,10 +76,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="mt-6 max-w-xl text-gray-400 text-sm sm:text-base leading-relaxed"
         >
-          Crafting modern web experiences with{" "}
-          <span className="text-white">React</span>,{" "}
-          <span className="text-white">Next.js</span>, and tools that make ideas
-          come alive.
+          A self-learner and passionate developer who thrives on exploring new technologies, solving real-world problems, and continuously improving skills through hands-on experience. I enjoy turning ideas into meaningful and scalable digital experiences.
         </motion.p>
 
         {/* Buttons */}
@@ -96,18 +102,20 @@ export default function Hero() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 10, 0] }}
-          transition={{
-            delay: 1,
-            repeat: Infinity,
-            duration: 1.5,
-          }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500 text-xl"
-        >
-          ↓
-        </motion.div>
+        <div onClick={scrollToAbout} className="hover:cursor-pointer">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [0, 10, 0] }}
+            transition={{
+              delay: 1,
+              repeat: Infinity,
+              duration: 1.5,
+            }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500 text-xl"
+          >
+            ↓
+          </motion.div>
+        </div>
       </div>
     </section>
   );

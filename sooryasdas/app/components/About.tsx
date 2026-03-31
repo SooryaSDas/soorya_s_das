@@ -4,19 +4,18 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "15+", label: "Projects Completed" },
-  { value: "12+", label: "Technologies" },
+  { value: "45+", label: "Projects Completed" },
+  { value: "20+", label: "Technologies" },
 ];
 
 export default function About() {
   return (
     <section id="about" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16">
-        
         {/* LEFT - Stats */}
         <div className="space-y-12">
           <p className="text-gray-500 tracking-[0.3em] text-xs uppercase">
-         About Me
+            About Me
           </p>
 
           {stats.map((stat, index) => (
@@ -53,19 +52,31 @@ export default function About() {
         >
           <p>
             I&apos;m a passionate software developer with{" "}
-            <span className="text-white">3+ years</span> of experience building
-            modern web applications. I specialize in{" "}
-            <span className="text-white">React</span> and{" "}
-            <span className="text-white">Next.js</span> ecosystems, crafting
-            performant, accessible, and visually compelling digital experiences.
+            <span className="text-white">3+ years of experience</span>
+            building modern, scalable web applications. As a self-learner, I
+            continuously explore new technologies, experiment with new ideas,
+            and improve my skills through real-world projects and hands-on
+            experience.
           </p>
 
           <p className="mt-6">
-            From pixel-perfect frontends to robust backend integrations with{" "}
-            <span className="text-white">MongoDB</span>,{" "}
+            I specialize in the{" "}
+            <span className="text-white">React and Next.js </span> ecosystem,
+            where I focus on creating performant, accessible, and visually
+            engaging user experiences. I enjoy transforming complex problems
+            into simple, elegant solutions while maintaining clean and
+            maintainable code.
+          </p>
+
+          <p className="mt-6">
+            Beyond the frontend, I have experience working with backend
+            technologies such as
+            <span className="text-white"> MongoDB</span>,{" "}
             <span className="text-white">Firebase</span>, and{" "}
-            <span className="text-white">Prisma</span> — I bring ideas to life
-            with clean code and thoughtful architecture.
+            <span className="text-white">Prisma</span>, allowing me to build
+            complete, end-to-end applications. I pay strong attention to
+            performance, scalability, and user-centric design in every project I
+            work on.
           </p>
         </motion.div>
       </div>
