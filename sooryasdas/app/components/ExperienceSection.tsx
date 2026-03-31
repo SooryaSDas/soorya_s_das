@@ -6,18 +6,18 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     role: "Software Developer",
-    company: "Your Company",
-    period: "2022 — Present",
+    company: "Code Publicist",
+    period: "2023 — Present",
     description:
-      "Building modern web applications using React, Next.js, and Tailwind CSS. Working with MongoDB and Prisma for database management. Implementing cloud solutions with Firebase and Cloudinary.",
+      "Building modern web applications using React, Next.js, and Tailwind CSS, with backend support from MongoDB and Prisma, and cloud solutions like Firebase and Cloudinary, while collaborating with cross-functional teams, leading development efforts, coordinating with clients, and delivering scalable, high-quality solutions on time.",
     tech: ["React/Next.js", "MongoDB", "Firebase"],
   },
   {
     role: "Junior Developer",
-    company: "Previous Company",
+    company: "VeMalls",
     period: "2021 — 2022",
     description:
-      "Developed responsive web interfaces with HTML, CSS, and JavaScript. Collaborated with cross-functional teams to deliver features using Frappe framework and Nunjucks templating.",
+      "Developed responsive web interfaces using React, along with HTML, CSS, and JavaScript.",
     tech: ["Frappe", "Nunjucks", "JavaScript"],
   },
 ];
@@ -37,7 +37,10 @@ const item = {
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="bg-black text-white py-20 px-6 md:px-20">
+    <section
+      id="experience"
+      className="bg-black text-white py-20 px-6 md:px-20"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,7 +57,7 @@ export default function ExperienceSection() {
           whileInView={{ height: "100%" }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="absolute left-4 top-0 w-[1px] bg-gray-700"
+          className="absolute left-4 top-0 w-px bg-gray-700"
         />
 
         <motion.div
@@ -65,11 +68,7 @@ export default function ExperienceSection() {
           className="space-y-16"
         >
           {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className="relative pl-12"
-            >
+            <motion.div key={index} variants={item} className="relative pl-12">
               {/* Icon with pulse */}
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -104,7 +103,7 @@ export default function ExperienceSection() {
                   {exp.description}
                 </p>
 
-                <div className="flex flex-wrap gap-3 mt-6">
+                {/* <div className="flex flex-wrap gap-3 mt-6">
                   {exp.tech.map((tech) => (
                     <motion.span
                       key={tech}
@@ -114,7 +113,7 @@ export default function ExperienceSection() {
                       {tech}
                     </motion.span>
                   ))}
-                </div>
+                </div> */}
               </motion.div>
             </motion.div>
           ))}

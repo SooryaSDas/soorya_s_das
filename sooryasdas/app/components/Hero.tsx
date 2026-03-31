@@ -53,7 +53,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Animated Role */}
-        <div className="h-[60px] sm:h-[80px] md:h-[120px] lg:h-[150px] overflow-hidden">
+        <div className="h-15 sm:h-20 md:h-30 lg:h-37.5 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.h1
               key={roles[index]}
