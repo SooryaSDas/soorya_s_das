@@ -5,9 +5,9 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "Bachelor of Computer Science",
-    institution: "Your University",
-    period: "2017 — 2021",
+    degree: "PG Diploma in IT Networking and Cloud Computing",
+    institution: "NSQF",
+    period: "2020 — 2022",
     description:
       "Focused on software engineering, data structures, and web technologies.",
   },
@@ -45,7 +45,7 @@ export default function EducationSection() {
           whileInView={{ height: "100%" }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="absolute left-4 top-0 w-[1px] bg-gray-700"
+          className="absolute left-4 top-0 w-px bg-gray-700"
         />
 
         <motion.div
