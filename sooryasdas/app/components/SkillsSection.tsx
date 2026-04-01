@@ -19,7 +19,7 @@ const skills = {
     "Firebase",
     "REST APIs",
   ],
-  tools: ["Git", "Frappe", "Nunjucks", "Cloudinary", "Vercel"],
+  tools: ["Git", "Frappe", "Nunjucks", "Cloudinary", "Vercel", "Zoho CRM"],
 };
 
 const containerVariants = {
