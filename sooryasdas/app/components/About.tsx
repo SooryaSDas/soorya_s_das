@@ -12,6 +12,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16">
+        
         {/* LEFT - Stats */}
         <div className="space-y-12">
           <p className="text-gray-500 tracking-[0.3em] text-xs uppercase">
@@ -21,13 +22,12 @@ export default function About() {
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
               viewport={{ once: true }}
               className="flex items-start gap-4"
             >
-              {/* Vertical line */}
               <div className="w-px h-12 bg-gray-700"></div>
 
               <div>
@@ -44,8 +44,8 @@ export default function About() {
 
         {/* RIGHT - Text */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="text-gray-400 text-sm sm:text-base leading-relaxed"
