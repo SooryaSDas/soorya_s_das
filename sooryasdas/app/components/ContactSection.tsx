@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, User, Globe } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -72,7 +73,6 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="bg-black text-white py-20 px-6 md:px-20">
-      
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
@@ -84,7 +84,6 @@ export default function ContactSection() {
       </motion.h2>
 
       <div className="grid md:grid-cols-2 gap-16 items-start">
-        
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -104,13 +103,23 @@ export default function ContactSection() {
 
           <div className="space-y-4 text-gray-400">
             <div className="flex items-center gap-3 hover:text-white transition">
-              <Mail size={18} /> Email
+              <Link href="mailto:sooryasandra6@gmail.com" target="_blank" className="flex items-center gap-3 hover:text-white transition">
+                <Mail size={18} /> Email
+              </Link>
             </div>
             <div className="flex items-center gap-3 hover:text-white transition">
-              <Globe size={18} /> GitHub
+              <Link href="https://github.com/sooryasdas" target="_blank" className="flex items-center gap-3 hover:text-white transition">
+                <Globe size={18} /> GitHub
+              </Link>
             </div>
             <div className="flex items-center gap-3 hover:text-white transition">
-              <User size={18} /> LinkedIn
+              <Link
+                href="https://www.linkedin.com/in/soorya-s-das-1667a01a5/"
+                target="_blank"
+                className="flex items-center gap-3 hover:text-white transition"
+              >
+                <User size={18} /> LinkedIn
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -124,9 +133,12 @@ export default function ContactSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           className="space-y-6"
         >
-          
           {/* Name */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
             <input
               name="name"
               type="text"
@@ -141,7 +153,11 @@ export default function ContactSection() {
           </motion.div>
 
           {/* Email */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
             <input
               name="email"
               type="email"
@@ -156,7 +172,11 @@ export default function ContactSection() {
           </motion.div>
 
           {/* Message */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
             <textarea
               name="message"
               rows={5}
@@ -205,9 +225,7 @@ export default function ContactSection() {
               ✕
             </button>
 
-            <h4 className="text-lg font-semibold mb-2">
-              Message Sent 🚀
-            </h4>
+            <h4 className="text-lg font-semibold mb-2">Message Sent 🚀</h4>
           </motion.div>
         </motion.div>
       )}
