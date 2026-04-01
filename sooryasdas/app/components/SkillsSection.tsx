@@ -103,7 +103,7 @@ export default function SkillsSection() {
         {/* Tools */}
         <div>
           <h3 className="text-lg mb-4 border-b border-gray-700 pb-2">
-            TOOLS & OTHERS
+            USED TOOLS & OTHERS
           </h3>
           <motion.div
             variants={containerVariants}
